@@ -47,7 +47,3 @@ Thumbs.db
 # others
 ant.properties
 build.xml
-
-# gitbook file
-_book/
-node_modules/

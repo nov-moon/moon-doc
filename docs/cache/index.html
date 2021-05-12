@@ -1,0 +1,1055 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>本地缓存管理-Cache · 皓月</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="moon">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tags/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-multipart/multipart.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../http/http快速接入.html" />
+    
+    
+    <link rel="prev" href="../db/Having.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://moon.mljr.com/" target="_blank" class="custom-link">首页</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../kit/">
+            
+                <a href="../kit/">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    组件间的桥梁-Kit
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../kit/Utils.html">
+            
+                <a href="../kit/Utils.html">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    开发工具集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../kit/task_msg.html">
+            
+                <a href="../kit/task_msg.html">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    Task
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../kit/dev_tools/">
+            
+                <a href="../kit/dev_tools/">
+            
+                    
+                        <b>1.2.3.</b>
+                    
+                    快速开发皓月工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../kit/dev_tools/moon_tools/MoonTools.html">
+            
+                <a href="../kit/dev_tools/moon_tools/MoonTools.html">
+            
+                    
+                        <b>1.2.3.1.</b>
+                    
+                    Lib库开发工具-MoonTools
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../kit/dev_tools/moon_tools/python插件.html">
+            
+                <a href="../kit/dev_tools/moon_tools/python插件.html">
+            
+                    
+                        <b>1.2.3.2.</b>
+                    
+                    批量升级工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../kit/dev_tools/moon_tools/UpgradeLog.html">
+            
+                <a href="../kit/dev_tools/moon_tools/UpgradeLog.html">
+            
+                    
+                        <b>1.2.3.3.</b>
+                    
+                    moon-tools更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../kit/kit_import.html">
+            
+                <a href="../kit/kit_import.html">
+            
+                    
+                        <b>1.2.4.</b>
+                    
+                    Kit库引入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../kit/UpgradeLog.html">
+            
+                <a href="../kit/UpgradeLog.html">
+            
+                    
+                        <b>1.2.5.</b>
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../log/">
+            
+                <a href="../log/">
+            
+                    
+                        <b>1.3.</b>
+                    
+                    日志管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../db/">
+            
+                <a href="../db/">
+            
+                    
+                        <b>1.4.</b>
+                    
+                    数据持久化-DB
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../db/注解.html">
+            
+                <a href="../db/注解.html">
+            
+                    
+                        <b>1.4.1.</b>
+                    
+                    注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../db/配置.html">
+            
+                <a href="../db/配置.html">
+            
+                    
+                        <b>1.4.2.</b>
+                    
+                    配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../db/WHERE条件语句.html">
+            
+                <a href="../db/WHERE条件语句.html">
+            
+                    
+                        <b>1.4.3.</b>
+                    
+                    WHERE条件语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../db/高级查询.html">
+            
+                <a href="../db/高级查询.html">
+            
+                    
+                        <b>1.4.4.</b>
+                    
+                    高级查询
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../db/Limit.html">
+            
+                <a href="../db/Limit.html">
+            
+                    
+                        <b>1.4.5.</b>
+                    
+                    Limit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../db/OrderBy.html">
+            
+                <a href="../db/OrderBy.html">
+            
+                    
+                        <b>1.4.6.</b>
+                    
+                    OrderBy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../db/Group By.html">
+            
+                <a href="../db/Group By.html">
+            
+                    
+                        <b>1.4.7.</b>
+                    
+                    GroupBy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../db/Having.html">
+            
+                <a href="../db/Having.html">
+            
+                    
+                        <b>1.4.8.</b>
+                    
+                    Having
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>1.5.</b>
+                    
+                    本地缓存管理-Cache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../http/http快速接入.html">
+            
+                <a href="../http/http快速接入.html">
+            
+                    
+                        <b>1.6.</b>
+                    
+                    网络请求-Http
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../http/http快速接入.html">
+            
+                <a href="../http/http快速接入.html">
+            
+                    
+                        <b>1.6.1.</b>
+                    
+                    快速接入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../http/配置.html">
+            
+                <a href="../http/配置.html">
+            
+                    
+                        <b>1.6.2.</b>
+                    
+                    配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../http/项目中接入.html">
+            
+                <a href="../http/项目中接入.html">
+            
+                    
+                        <b>1.6.3.</b>
+                    
+                    更多接入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../http/头.html">
+            
+                <a href="../http/头.html">
+            
+                    
+                        <b>1.6.4.</b>
+                    
+                    头
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../http/参数.html">
+            
+                <a href="../http/参数.html">
+            
+                    
+                        <b>1.6.5.</b>
+                    
+                    参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../http/高级特性.html">
+            
+                <a href="../http/高级特性.html">
+            
+                    
+                        <b>1.6.6.</b>
+                    
+                    高级特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../http/解析器.html">
+            
+                <a href="../http/解析器.html">
+            
+                    
+                        <b>1.6.7.</b>
+                    
+                    解析器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../http/转换器.html">
+            
+                <a href="../http/转换器.html">
+            
+                    
+                        <b>1.6.8.</b>
+                    
+                    转换器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="../http/取消.html">
+            
+                <a href="../http/取消.html">
+            
+                    
+                        <b>1.6.9.</b>
+                    
+                    取消
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="../http/缓存.html">
+            
+                <a href="../http/缓存.html">
+            
+                    
+                        <b>1.6.10.</b>
+                    
+                    缓存
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="../http/下载.html">
+            
+                <a href="../http/下载.html">
+            
+                    
+                        <b>1.6.11.</b>
+                    
+                    下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="../http/异常和失败.html">
+            
+                <a href="../http/异常和失败.html">
+            
+                    
+                        <b>1.6.12.</b>
+                    
+                    异常和失败
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../rainbow/">
+            
+                <a href="../rainbow/">
+            
+                    
+                        <b>1.7.</b>
+                    
+                    页面管理器-Rainbow
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../rainbow/注解使用.html">
+            
+                <a href="../rainbow/注解使用.html">
+            
+                    
+                        <b>1.7.1.</b>
+                    
+                    注解使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../rainbow/页面导航.html">
+            
+                <a href="../rainbow/页面导航.html">
+            
+                    
+                        <b>1.7.2.</b>
+                    
+                    页面导航
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../rainbow/RainbowFragment定制.html">
+            
+                <a href="../rainbow/RainbowFragment定制.html">
+            
+                    
+                        <b>1.7.3.</b>
+                    
+                    RainbowFragment介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../rainbow/最佳实践.html">
+            
+                <a href="../rainbow/最佳实践.html">
+            
+                    
+                        <b>1.7.4.</b>
+                    
+                    最佳实践
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../event/">
+            
+                <a href="../event/">
+            
+                    
+                        <b>1.8.</b>
+                    
+                    事件分发-Event
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../permission/">
+            
+                <a href="../permission/">
+            
+                    
+                        <b>1.9.</b>
+                    
+                    动态权限-Permission
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../permission/Permission注解.html">
+            
+                <a href="../permission/Permission注解.html">
+            
+                    
+                        <b>1.9.1.</b>
+                    
+                    Permission注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../permission/配置说明.html">
+            
+                <a href="../permission/配置说明.html">
+            
+                    
+                        <b>1.9.2.</b>
+                    
+                    配置说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../permission/UpgradeLog.html">
+            
+                <a href="../permission/UpgradeLog.html">
+            
+                    
+                        <b>1.9.3.</b>
+                    
+                    版本更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >本地缓存管理-Cache</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7693;&#x6708;&#x7F13;&#x5B58;&#x5E93;"><a name="&#x7693;&#x6708;&#x7F13;&#x5B58;&#x5E93;" class="anchor-navigation-ex-anchor" href="#&#x7693;&#x6708;&#x7F13;&#x5B58;&#x5E93;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7693;&#x6708;&#x7F13;&#x5B58;&#x5E93;</h1>
+<p>&#x7693;&#x6708;&#x7F13;&#x5B58;&#x5E93;&#x662F;&#x57FA;&#x4E8E;&#x6570;&#x636E;&#x5E93;&#x7684;&#x65B9;&#x5F0F;&#x901A;&#x8FC7;&#x7B80;&#x4FBF;&#x7684;&#x8C03;&#x7528;&#x65B9;&#x5F0F;&#x5B9E;&#x73B0;&#x7F13;&#x5B58;&#x7684;&#x5FEB;&#x901F;&#x8BFB;&#x53D6;&#x4E0E;&#x63D2;&#x5165;&#x64CD;&#x4F5C;&#xFF0C;&#x5982;&#x679C;&#x8D85;&#x8FC7;&#x7F13;&#x5B58;&#x5E93;&#x7684;&#x5BB9;&#x91CF;&#xFF0C;&#x7F13;&#x5B58;&#x5E93;&#x91C7;&#x7528;&#x7684;&#x7B56;&#x7565;&#x662F;LRU&#x3002;</p>
+<p><a href="assets/&#x7F13;&#x5B58;.png" data-lightbox="195f8489-f697-40dd-976c-da0c2c98c3e3" data-title="undefined"><img src="assets/&#x7F13;&#x5B58;.png" alt="undefined"></a></p>
+<h1 id="1&#x5FEB;&#x901F;&#x96C6;&#x6210;"><a name="1&#x5FEB;&#x901F;&#x96C6;&#x6210;" class="anchor-navigation-ex-anchor" href="#1&#x5FEB;&#x901F;&#x96C6;&#x6210;"><i class="fa fa-link" aria-hidden="true"></i></a>1.&#x5FEB;&#x901F;&#x96C6;&#x6210;</h1>
+<h2 id="11-gradle"><a name="11-gradle" class="anchor-navigation-ex-anchor" href="#11-gradle"><i class="fa fa-link" aria-hidden="true"></i></a>1.1 Gradle</h2>
+<p> <code>api &quot;com.meili.moon.sdk:cache:x.x.x&quot;</code></p>
+<h2 id="12-&#x521D;&#x59CB;&#x5316;"><a name="12-&#x521D;&#x59CB;&#x5316;" class="anchor-navigation-ex-anchor" href="#12-&#x521D;&#x59CB;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2 &#x521D;&#x59CB;&#x5316;</h2>
+<p>&#x5728;application&#x7684;onCreate()&#x65B9;&#x6CD5;&#x4E2D;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;&#x73AF;&#x5883;</p>
+<pre><code class="lang-java">class DemoApp : Application() {
+    override fun onCreate() {
+        super.onCreate()
+        MoonCacheImpl.init(this)
+    }
+}
+</code></pre>
+<p>&#x6CE8;&#xFF1A;&#x5982;&#x679C;&#x9879;&#x76EE;&#x4E2D;&#x5F15;&#x5165;&#x4E86;&#x6574;&#x4F53;&#x7693;&#x6708;&#x5E93;&#xFF0C;&#x5219;&#x4E0D;&#x9700;&#x8981;&#x5728;&#x5355;&#x72EC;&#x521D;&#x59CB;&#x5316;&#x3002;</p>
+<h1 id="2&#x4F7F;&#x7528;&#x65B9;&#x5F0F;"><a name="2&#x4F7F;&#x7528;&#x65B9;&#x5F0F;" class="anchor-navigation-ex-anchor" href="#2&#x4F7F;&#x7528;&#x65B9;&#x5F0F;"><i class="fa fa-link" aria-hidden="true"></i></a>2.&#x4F7F;&#x7528;&#x65B9;&#x5F0F;</h1>
+<p>&#x7F13;&#x5B58;&#x5E93;&#x7684;&#x7F13;&#x5B58;&#x65B9;&#x5F0F;&#x5206;&#x4E3A;&#x4E24;&#x79CD;&#xFF0C;&#x4E00;&#x79CD;&#x662F;&#x7F13;&#x5B58;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4E00;&#x79CD;&#x662F;&#x7F13;&#x5B58;&#x6587;&#x4EF6;&#x3002;
+<a href="assets/cache&#x5206;&#x7C7B;.png" data-lightbox="8b3333b7-b09e-4992-b773-a6d679d4bc35" data-title="undefined"><img src="assets/cache&#x5206;&#x7C7B;.png" alt="undefined"></a></p>
+<h2 id="21-api&#x7F13;&#x5B58;"><a name="21-api&#x7F13;&#x5B58;" class="anchor-navigation-ex-anchor" href="#21-api&#x7F13;&#x5B58;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1. Api&#x7F13;&#x5B58;</h2>
+<p>&#x6211;&#x4EEC;&#x5728;&#x4F7F;&#x7528;&#x7F13;&#x5B58;&#x65F6;&#xFF0C;&#x901A;&#x5E38;&#x662F;&#x8981;&#x5C06;&#x9700;&#x8981;&#x7F13;&#x5B58;&#x7684;&#x5185;&#x5BB9;&#x5B58;&#x5165;&#xFF0C;&#x9700;&#x8981;&#x8BFB;&#x53D6;&#x7F13;&#x5B58;&#x7684;&#x65F6;&#x5019;&#x53BB;&#x8BFB;&#x53D6;&#x3002;</p>
+<pre><code class="lang-java">val cache = MoonCacheImpl.getCache()
+<span class="hljs-comment">//&#x5C06;&#x5185;&#x5BB9;&#x7F13;&#x5B58;&#x8D77;&#x6765;</span>
+cache.put(<span class="hljs-string">&quot;cache&quot;</span>,<span class="hljs-string">&quot;&#x7F13;&#x5B58;&#x7684;&#x5185;&#x5BB9;&quot;</span>)
+<span class="hljs-comment">//&#x8BFB;&#x53D6;&#x7F13;&#x5B58;&#x7684;&#x5185;&#x5BB9;</span>
+ val cache = cache.getValue(<span class="hljs-string">&quot;cache&quot;</span>)
+</code></pre>
+<h2 id="22-&#x6587;&#x4EF6;&#x7F13;&#x5B58;"><a name="22-&#x6587;&#x4EF6;&#x7F13;&#x5B58;" class="anchor-navigation-ex-anchor" href="#22-&#x6587;&#x4EF6;&#x7F13;&#x5B58;"><i class="fa fa-link" aria-hidden="true"></i></a>2.2. &#x6587;&#x4EF6;&#x7F13;&#x5B58;</h2>
+<pre><code class="lang-java">val fileCache = MoonCacheImpl.getFileCache()
+<span class="hljs-comment">//&#x5C06;&#x6587;&#x4EF6;&#x7F13;&#x5B58;&#x8D77;&#x6765;</span>
+fileCache.put(<span class="hljs-string">&quot;fileCache&quot;</span>, File(filePath))
+<span class="hljs-comment">//&#x8BFB;&#x53D6;&#x7F13;&#x5B58;&#x7684;&#x6587;&#x4EF6;</span>
+val cache = fileCache.getValue(<span class="hljs-string">&quot;fileCache&quot;</span>)
+</code></pre>
+<h1 id="3-&#x9AD8;&#x7EA7;&#x7279;&#x6027;"><a name="3-&#x9AD8;&#x7EA7;&#x7279;&#x6027;" class="anchor-navigation-ex-anchor" href="#3-&#x9AD8;&#x7EA7;&#x7279;&#x6027;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x9AD8;&#x7EA7;&#x7279;&#x6027;</h1>
+<p>&#x9664;&#x4E86;&#x57FA;&#x672C;&#x7684;&#x4F7F;&#x7528;&#xFF0C;&#x8FD8;&#x5305;&#x62EC;&#x914D;&#x7F6E;&#x7F13;&#x5B58;&#x7684;&#x6700;&#x5927;&#x6761;&#x6570;&#xFF0C;&#x6587;&#x4EF6;&#x7F13;&#x5B58;&#x7684;&#x6700;&#x5927;&#x78C1;&#x76D8;&#x7A7A;&#x95F4;&#xFF0C;&#x6E05;&#x9664;&#x7F13;&#x5B58;&#x7B49;&#x529F;&#x80FD;</p>
+<h2 id="31-&#x914D;&#x7F6E;&#x6700;&#x5927;&#x7F13;&#x5B58;&#x6570;&#xFF0C;&#x6700;&#x5927;&#x7684;&#x78C1;&#x76D8;&#x7A7A;&#x95F4;"><a name="31-&#x914D;&#x7F6E;&#x6700;&#x5927;&#x7F13;&#x5B58;&#x6570;&#xFF0C;&#x6700;&#x5927;&#x7684;&#x78C1;&#x76D8;&#x7A7A;&#x95F4;" class="anchor-navigation-ex-anchor" href="#31-&#x914D;&#x7F6E;&#x6700;&#x5927;&#x7F13;&#x5B58;&#x6570;&#xFF0C;&#x6700;&#x5927;&#x7684;&#x78C1;&#x76D8;&#x7A7A;&#x95F4;"><i class="fa fa-link" aria-hidden="true"></i></a>3.1 &#x914D;&#x7F6E;&#x6700;&#x5927;&#x7F13;&#x5B58;&#x6570;&#xFF0C;&#x6700;&#x5927;&#x7684;&#x78C1;&#x76D8;&#x7A7A;&#x95F4;</h2>
+<p>&#x914D;&#x7F6E;&#x4E0D;&#x662F;&#x5FC5;&#x987B;&#x7684;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x914D;&#x7F6E;&#xFF0C;&#x7F13;&#x5B58;&#x5E93;&#x4F1A;&#x4E3A;&#x4F60;&#x63D0;&#x4F9B;&#x9ED8;&#x8BA4;&#x7684;&#x7F13;&#x5B58;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x7684;&#x7F13;&#x5B58;&#x6570;&#x4E3A;5000&#xFF0C;&#x6587;&#x4EF6;&#x7F13;&#x5B58;&#x7684;&#x6700;&#x5927;&#x78C1;&#x76D8;&#x7A7A;&#x95F4;&#x4E3A;100M&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x89C9;&#x5F97;&#x5E76;&#x4E0D;&#x9002;&#x5408;&#x4F60;&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x6211;&#x4EEC;&#x63D0;&#x4F9B;&#x4E86;&#x81EA;&#x5B9A;&#x4E49;&#x8BBE;&#x7F6E;&#xFF0C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-java"> cache.configGlobal(object : DiskCache.Config {
+                 <span class="hljs-comment">/**&#x7F13;&#x5B58;&#x6700;&#x5927;&#x6761;&#x6570;*/</span>
+                override var cacheMaxCount: Int = <span class="hljs-number">500</span>
+                <span class="hljs-comment">/**&#x6587;&#x4EF6;&#x7F13;&#x5B58;&#x7684;&#x6700;&#x5927;&#x78C1;&#x76D8;&#x7A7A;&#x95F4;&#xFF0C;&#x5355;&#x4F4D;&#xFF1A;&#x5B57;&#x8282;*/</span>
+                override var cacheMaxFileSize: Long = <span class="hljs-number">10</span> * <span class="hljs-number">1024</span> * <span class="hljs-number">1024L</span>
+            })
+</code></pre>
+<h2 id="32-&#x901A;&#x8FC7;key&#x6E05;&#x9664;&#x7F13;&#x5B58;"><a name="32-&#x901A;&#x8FC7;key&#x6E05;&#x9664;&#x7F13;&#x5B58;" class="anchor-navigation-ex-anchor" href="#32-&#x901A;&#x8FC7;key&#x6E05;&#x9664;&#x7F13;&#x5B58;"><i class="fa fa-link" aria-hidden="true"></i></a>3.2 &#x901A;&#x8FC7;key&#x6E05;&#x9664;&#x7F13;&#x5B58;</h2>
+<p>&#x6211;&#x4EEC;&#x5728;&#x5B58;&#x50A8;&#x7F13;&#x5B58;&#x7684;&#x65F6;&#x5019;&#x662F;&#x901A;&#x8FC7;&#x952E;&#x503C;&#x5BF9;&#x65B9;&#x5F0F;&#x5B58;&#x50A8;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;key&#x53BB;&#x5220;&#x9664;&#x8FD9;&#x6761;&#x7F13;&#x5B58;</p>
+<pre><code class="lang-java">val cache = MoonCacheImpl.getCache()
+cache.remove(<span class="hljs-string">&quot;cache&quot;</span>)
+</code></pre>
+<h2 id="33-&#x6E05;&#x9664;&#x7F13;&#x5B58;"><a name="33-&#x6E05;&#x9664;&#x7F13;&#x5B58;" class="anchor-navigation-ex-anchor" href="#33-&#x6E05;&#x9664;&#x7F13;&#x5B58;"><i class="fa fa-link" aria-hidden="true"></i></a>3.3 &#x6E05;&#x9664;&#x7F13;&#x5B58;</h2>
+<p>&#x7F13;&#x5B58;&#x5206;&#x4E3A;&#x4E24;&#x7C7B;&#x7F13;&#x5B58;&#xFF0C;&#x4E00;&#x7C7B;&#x662F;&#x6587;&#x4EF6;&#x7F13;&#x5B58;&#xFF0C;&#x4E00;&#x7C7B;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x7F13;&#x5B58;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x5355;&#x72EC;&#x6E05;&#x9664;&#x54EA;&#x4E00;&#x7C7B;&#x7684;&#x7F13;&#x5B58;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>clear()</code></p>
+<pre><code class="lang-java">val fileCache = MoonCacheImpl.getFileCache()
+<span class="hljs-comment">//&#x6E05;&#x9664;&#x6587;&#x4EF6;&#x7684;&#x7F13;&#x5B58;</span>
+fileCache.clear()
+val cache = MoonCacheImpl.getCache()
+<span class="hljs-comment">//&#x6E05;&#x695A;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x7F13;&#x5B58;</span>
+cache.clear()
+</code></pre>
+<h2 id="34-&#x6E05;&#x9664;&#x5168;&#x90E8;&#x7F13;&#x5B58;"><a name="34-&#x6E05;&#x9664;&#x5168;&#x90E8;&#x7F13;&#x5B58;" class="anchor-navigation-ex-anchor" href="#34-&#x6E05;&#x9664;&#x5168;&#x90E8;&#x7F13;&#x5B58;"><i class="fa fa-link" aria-hidden="true"></i></a>3.4 &#x6E05;&#x9664;&#x5168;&#x90E8;&#x7F13;&#x5B58;</h2>
+<p>&#x5728;&#x6211;&#x4EEC;&#x5F00;&#x53D1;&#x9879;&#x76EE;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x60F3;&#x6E05;&#x695A;&#x5168;&#x90E8;&#x7F13;&#x5B58;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<code>clearAll()</code>&#xFF0C;&#x65E0;&#x8BBA;&#x54EA;&#x4E2A;&#x8C01;&#x8C03;&#x7528;&#x90FD;&#x662F;&#x6E05;&#x9664;&#x5168;&#x90E8;&#x7F13;&#x5B58;&#x3002;</p>
+<pre><code class="lang-java">val fileCache = MoonCacheImpl.getFileCache()
+<span class="hljs-comment">//&#x6E05;&#x9664;&#x5168;&#x90E8;&#x7F13;&#x5B58;</span>
+fileCache.clearAll()
+val cache = MoonCacheImpl.getCache()
+<span class="hljs-comment">//&#x6E05;&#x695A;&#x5168;&#x90E8;&#x7F13;&#x5B58;</span>
+cache.clearAll()
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; moon 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x672C;&#x4E66;&#x53D1;&#x5E03;&#x65F6;&#x95F4;&#xFF1A;
+2019-09-26 10:03:48
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../db/Having.html" class="navigation navigation-prev " aria-label="Previous page: Having">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../http/http快速接入.html" class="navigation navigation-next " aria-label="Next page: 网络请求-Http">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"本地缓存管理-Cache","level":"1.5","depth":1,"next":{"title":"网络请求-Http","level":"1.6","depth":1,"path":"http/http快速接入.md","ref":"http/http快速接入.md","articles":[{"title":"快速接入","level":"1.6.1","depth":2,"path":"http/http快速接入.md","ref":"http/http快速接入.md","articles":[]},{"title":"配置","level":"1.6.2","depth":2,"path":"http/配置.md","ref":"http/配置.md","articles":[]},{"title":"更多接入","level":"1.6.3","depth":2,"path":"http/项目中接入.md","ref":"http/项目中接入.md","articles":[]},{"title":"头","level":"1.6.4","depth":2,"path":"http/头.md","ref":"http/头.md","articles":[]},{"title":"参数","level":"1.6.5","depth":2,"path":"http/参数.md","ref":"http/参数.md","articles":[]},{"title":"高级特性","level":"1.6.6","depth":2,"path":"http/高级特性.md","ref":"http/高级特性.md","articles":[]},{"title":"解析器","level":"1.6.7","depth":2,"path":"http/解析器.md","ref":"http/解析器.md","articles":[]},{"title":"转换器","level":"1.6.8","depth":2,"path":"http/转换器.md","ref":"http/转换器.md","articles":[]},{"title":"取消","level":"1.6.9","depth":2,"path":"http/取消.md","ref":"http/取消.md","articles":[]},{"title":"缓存","level":"1.6.10","depth":2,"path":"http/缓存.md","ref":"http/缓存.md","articles":[]},{"title":"下载","level":"1.6.11","depth":2,"path":"http/下载.md","ref":"http/下载.md","articles":[]},{"title":"异常和失败","level":"1.6.12","depth":2,"path":"http/异常和失败.md","ref":"http/异常和失败.md","articles":[]}]},"previous":{"title":"Having","level":"1.4.8","depth":2,"path":"db/Having.md","ref":"db/Having.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","code","-sharing","sharing-plus","-search","-lunr","search-pro","splitter","tags","tbfed-pagefooter","toggle-chapters","multipart","chapter-fold","lightbox","theme-comscore","theme-default","-ancre-navigation","anchor-navigation-ex","lightbox","livereload"],"root":".","styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © moon 2019","modify_label":"本书发布时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"github":{"url":"https://github.com/andyhome163"},"livereload":{},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"multipart":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"lightbox":{"jquery":true,"sameUuid":false},"theme-comscore":{},"tags":{"placement":"bottom"},"sharing":{"facebook":false,"twitter":false,"weibo":true,"qq":true},"theme-default":{"showLevel":true,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"toggle-chapters":{}},"theme":"default","author":"moon","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"皓月","language":"zh-hans","output.name":"moon","links":{"sidebar":{"首页":"https://moon.mljr.com/"}},"gitbook":"3.2.3","description":"皓月整理笔记"},"file":{"path":"cache/README.md","mtime":"2019-09-26T02:03:48.213Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-06T08:56:40.236Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+

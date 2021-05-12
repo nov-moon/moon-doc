@@ -1,0 +1,72 @@
+{
+	"title": "皓月",
+	"description": "皓月整理笔记",
+	"author": "moon",
+	"output.name": "moon",
+	"language": "zh-hans",
+	"gitbook": "3.2.3",
+	"root": ".",
+	"links": {
+		"sidebar": {
+			"首页": "https://moon.mljr.com/"
+		}
+	},
+	"plugins": [
+		"github",
+		"code",
+		"-sharing",
+		"sharing-plus",
+		"-search",
+		"-lunr",
+		"search-pro",
+		"splitter",
+		"tags",
+		"tbfed-pagefooter",
+		"toggle-chapters",
+		"multipart",
+		"chapter-fold",
+		"lightbox",
+		"theme-comscore",
+		"theme-default",
+		"-ancre-navigation",
+		"anchor-navigation-ex",
+		"lightbox"
+	],
+	"pluginsConfig": {
+		"github": {
+			"url": "https://github.com/andyhome163"
+		},
+		"code": {
+			"copyButtons": true
+		},
+		"sharing": {
+			"facebook": false,
+			"twitter": false,
+			"weibo": true,
+			"qq": true
+		},
+		"tags": {
+			"placement": "bottom"
+		},
+		"tbfed-pagefooter": {
+			"copyright": "Copyright © moon 2019",
+			"modify_label": "本书发布时间：",
+			"modify_format": "YYYY-MM-DD HH:mm:ss"
+		},
+		"theme-default": {
+			"showLevel": true
+		},
+		"anchor-navigation-ex": {
+			"associatedWithSummary":false,
+			"showLevel":true,
+			"multipleH1": true,
+			"mode": "float",
+			"pageTop": {
+				"showLevelIcon": false,
+				"level1Icon": "fa fa-hand-o-right",
+				"level2Icon": "fa fa-hand-o-right",
+				"level3Icon": "fa fa-hand-o-right"
+			}
+		}
+	}
+}
